@@ -4,4 +4,4 @@
        WEB1</a></h2>
 
 Here is my <strong>first web site!</strong><br>
-Please visit and comment review.
+Please visit and write comments.
