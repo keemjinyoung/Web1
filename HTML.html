@@ -1,21 +1,63 @@
 <!doctype html>
 <html>
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCC375848V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SCC375848V');
+</script>
     <title>WEB1 - html</title>
     <meta charset="utf-8">
+    <style>
+        body{
+            margin:0;
+        }
+        #active{
+            color:red;
+            text-decoration: underline;
+        }
+        .saw{
+            color:gray;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        h1{
+            text-align: center;
+            font-size: 55px;
+            margin-bottom:0;
+        }
+        ol{
+            border-right:2px solid gray;
+            padding-left:20px;
+            width:100px;
+            margin:0;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="index.html"><h1>📖 Frontend Study</h1></a>
+    <a href="index.html" style="border-bottom:2px solid gray; padding:10px; display:block; margin:0;"><h1>🧑🏻‍💻WEB</h1></a>
 
-    <h2>LIST</h2>
     <ol>
-    <li><a href="HTML.html">HTML</li></a>
-    <li><a href="CSS.html">CSS</li></a>
-    <li><a href="JavaScript.html">JavaScript</li></a>
+    <h2 style="margin:0; padding:10px;">LIST</h2>
+    <li><a href="HTML.html" class="saw" id="active">HTML</a></li>
+    <li><a href="CSS.html" class="saw">CSS</a></li>
+    <li><a href="JavaScript.html">JavaScript</a></li>
     </ol> <br>
 
     <h2>HTML</h2>
+    <p>
+        <iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jSJM9iOiQ1g"
+        frameborder="0" allowfullscreen></iframe>
+    </p>
     <p><a
         href="https://www.w3.org/TR/html5/"
         target="_blank"
@@ -35,6 +77,10 @@
         <br>들리지 않던 것이 들리기 시작한다.
     </p>
 
+    <p> 공부는 그만 두는 것이 아니다.<br>
+        미래로 유보하는 것이다.<br>
+    </p>
+
     <p style="margin-top:55px;"> <h3>Coding</h3>
         <strong><span style="font-size:19px;">Coding</span></strong>
         <br><br>위 아래는 같은 글 같지만 코드가 다르다.
@@ -45,5 +91,71 @@
 
     <img src="참으려고해도.jpeg"width="50%">
     <br> 무한도전 짤 ㅋㅋ 공부 생각만 하면 참으려고 해도 참아지지가 않아
+    
+    <p style="margin-top:150px;">
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://keemjinyoung.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    
+    </p>
+
+    <!--
+    요약
+    URL을 로컬호스트로 변경하지 않고도 댓글 기능이 나오게 하려면:
+
+    disqus_config에서 page.identifier와 테스트용 page.url을 설정하세요.
+    필요하면 Disqus 관리자 설정에서 localhost를 허용된 도메인에 추가하세요.
+    이 방법을 사용하면 로컬 환경에서도 URL 변경 없이 댓글 기능을 테스트할 수 있습니다. 
+    
+    <script>
+    var disqus_config = function () {
+    this.page.url = "http://example.com/html"; // 실제 URL 대신 고유의 URL 설정 (테스트용)
+    this.page.identifier = "html_page"; // 각 페이지를 구분할 고유 식별자
+    };
+    (function() { // 아래 코드는 수정하지 마세요
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+
+    URL을 로컬호스트로 바꾸지 않고도 댓글 기능이 나올 수 있는 방법이 있습니다. 이를 위해 Disqus가 URL이 아니라 **페이지 식별자(identifier)**를 기반으로 작동하도록 설정하면 됩니다.
+
+    주요 해결 방법
+    Disqus는 기본적으로 URL을 사용해 페이지를 구분하지만, disqus_config를 통해 **고유 식별자(page.identifier)**를 설정하면 URL 대신 이를 기반으로 댓글을 관리할 수 있습니다. 아래는 이를 구현하는 방법입니다.
+    -->
+
+    <p>
+        <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6913d6cd2dd55f195fde9a6d/1j9qnu4rt';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    </p>
+
 </body>
 </html>
